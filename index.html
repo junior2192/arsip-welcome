@@ -88,6 +88,17 @@
         text-shadow: 0 2px 3px rgba(0,0,0,0.7);
     }
 
+    /* Nama arsip */
+    .arsip-name {
+        color: #00CFFF; /* biru-cyan terang */
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* biar kelihatan jelas */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
     /* ===== Responsif ===== */
     @media (max-width: 576px) {
         .card {
@@ -143,7 +154,7 @@
         if (link) {
             contentDiv.innerHTML = `
                 <p class="mb-2">Anda akan diarahkan ke arsip digital di OneDrive.</p>
-                ${name ? `<h5 class="fw-bold mb-3">${name}</h5>` : ''}
+                ${name ? `<h5 class="arsip-name fw-bold mb-3 mt-5">${name}</h5>` : ''}
                 <a href="${link}" class="btn btn-custom">Lanjutkan Lihat Arsip</a>
             `;
         } else {
